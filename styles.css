@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  max-width: 1440px;
+  background-color:#ECF2FF;
+}
+
+p {
+  font-size: 18px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__container {
+  border-radius: 32px;
+  background-color: #fff;
+  overflow: hidden;
+  max-width: 736px;
+  max-height: 512px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
