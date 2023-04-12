@@ -7,10 +7,10 @@
 }
 
 :root {
-  --clr-primary-red: hsl(0, 100%, 67%);
-  --clr-primary-yellow: hsl(39, 100%, 56%);
-  --clr-primary-green-teal: hsl(166, 100%, 37%);
-  --clr-primary-cobalt-blue:  hsl(234, 85%, 45%);
+  --clr-primary-red: 0, 100%, 67%;
+  --clr-primary-yellow: 39, 100%, 56%;
+  --clr-primary-green-teal: 166, 100%, 37%;
+  --clr-primary-cobalt-blue: 234, 85%, 45%;
 
   --clr-neutral-white: hsl(0, 0%, 100%);
   --clr-neutral-pale-blue: hsl(221, 100%, 96%);
@@ -158,11 +158,51 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 1rem;
+  font-size: var(--fs-400);
+  background-color: hsl(var(--item-color), .1);
 }
 
+.card__result-item div {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
 
-.card_result-reaction {
-  color: hsl(0, 100%, 67%);
+.card__result-score {
+  color: hsl(224, 30%, 27%, 0.5)
+}
+
+.card__result-score span {
+  font-weight: var(--fw-black);
+  color: var(--clr-neutral-dark-gray-blue);
+}
+
+.card__result-item svg {
+  stroke: hsl(var(--item-color));
+}
+
+.card__category-title {
+  color: hsl(var(--item-color));
+  font-weight: var(--fw-regular);
+  font-size: inherit;
+}
+
+.reaction {
+  --item-color: var(--clr-primary-red);
+}
+
+.memory {
+  --item-color: var(--clr-primary-yellow);
+
+}
+
+.verbal {
+  --item-color: var(--clr-primary-green-teal);
+}
+
+.visual {
+  --item-color: var(--clr-primary-cobalt-blue);
 }
 
 
