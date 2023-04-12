@@ -1,12 +1,54 @@
+@font-face {
+  font-family:'HankenGrotesk';
+  font-display: swap;
+  font-weight: 100 700;
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf')
+        format('truetype');
+}
+
+:root {
+  --clr-primary-red: hsl(0, 100%, 67%);
+  --clr-primary-yellow: hsl(39, 100%, 56%);
+  --clr-primary-green-teal: hsl(166, 100%, 37%);
+  --clr-primary-cobalt-blue:  hsl(234, 85%, 45%);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-pale-blue: hsl(221, 100%, 96%);
+  --clr-neutral-light-lavender: hsl(241, 100%, 89%);
+  --clr-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --gradient-bg: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%));
+
+  --gradient-circle: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0));
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+}
+
 * {
   box-sizing: border-box;
-  font-size: 16px;
+  margin: 0;
 }
 
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   max-width: 1440px;
   background-color:#ECF2FF;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 p {
@@ -18,7 +60,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
 }
 
-img {
+img,
+svg {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -29,8 +73,36 @@ img {
   overflow: hidden;
   max-width: 736px;
   max-height: 512px;
-  position: fixed;
+  /* position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
+}
+
+.card__content {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card__results {
+  background-color: hsl(252, 100%, 67%);
+  border-radius: 32px;
+}
+
+.card_result-reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+
+button {
+  border-radius: 128px;
+  background-color: #303B59;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  padding: 1rem 6.6rem;
+  font-weight: 700;
 }
