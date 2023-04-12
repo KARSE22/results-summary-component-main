@@ -42,21 +42,7 @@
   margin: 0;
 }
 
-body {
-  font-family: 'Hanken Grotesk', sans-serif;
-  max-width: 1440px;
-  background-color:#ECF2FF;
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-}
-
-p {
-  font-size: 18px;
-}
-
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
   padding: 0;
 }
 
@@ -67,9 +53,28 @@ svg {
   height: auto;
 }
 
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: var(--fs-400);
+  background-color: var(--clr-neutral-pale-blue);
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+}
+
+.card__section-title {
+  font-weight: var(--fw-bold);
+  font-size: 1.3rem;
+}
+
 .card__container {
-  border-radius: 32px;
-  background-color: #fff;
+  border-radius: var(--fs-800);
+  background-color: var(--clr-neutral-white);
   overflow: hidden;
   max-width: 736px;
   max-height: 512px;
@@ -89,7 +94,7 @@ svg {
 
 .card__results {
   background-color: hsl(252, 100%, 67%);
-  border-radius: 32px;
+  border-radius: var(--fs-800);
 }
 
 .card_result-reaction {
@@ -98,11 +103,18 @@ svg {
 
 
 button {
-  border-radius: 128px;
-  background-color: #303B59;
-  font-size: 18px;
-  color: #fff;
+  border-radius: 8rem;
+  background: var(--clr-neutral-dark-gray-blue);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-white);
+  line-height: 1.28;
   border: none;
   padding: 1rem 6.6rem;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: var(--gradient-bg);
 }
