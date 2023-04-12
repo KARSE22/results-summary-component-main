@@ -30,11 +30,7 @@
   --fw-black: 800;
 
   --fs-400: 1.125rem;
-  --fs-500: 1.25rem;
-  --fs-600: 1.5rem;
-  --fs-700: 1.75rem;
   --fs-800: 2rem;
-  --fs-900: 5rem;
 }
 
 * {
@@ -70,6 +66,7 @@ body {
 .card__section-title {
   font-weight: var(--fw-bold);
   font-size: 1.3rem;
+  margin-top: 2.375rem;
 }
 
 .card__container {
@@ -78,6 +75,7 @@ body {
   overflow: hidden;
   max-width: 736px;
   max-height: 512px;
+  box-shadow: 0 1.875rem 3.75rem rgba(61, 108, 236, 0.15);
   /* position: fixed;
   top: 50%;
   left: 50%;
@@ -92,12 +90,25 @@ body {
 
 }
 
+@media (max-width: 600px) {
+  .card__content {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  /* .card__results {
+    overflow: hidden;
+  } */
+}
+
 .card__results {
   background: var(--gradient-bg);
   border-radius: var(--fs-800);
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2.18rem 0;
+  padding: 0 3rem;
 }
 
 .card__results h1 {
@@ -109,7 +120,7 @@ body {
   background: var(--gradient-circle);
   border-radius: 50%;
   padding: 3.4rem 3.75rem 2.875rem;
-  color: var(--clr-neutral-light-lavender);
+  color: hsl(241, 100%, 89%, 0.52);
   font-weight: var(--fw-bold);
   line-height: 1.4rem;
   display: flex;
@@ -119,7 +130,7 @@ body {
 
 .card__results-score span {
   font-size: 4.5rem;
-  color: var(--clr-neutral-white);
+  color: hsl(0, 0%, 100%, 1);
   line-height: 4.5rem;
 }
 
@@ -130,6 +141,8 @@ body {
 .card__great p {
   color: var(--clr-neutral-light-lavender);
   font-weight: var(--fw-regular);
+  line-height: 1.43rem;
+  font-size: var(--fs-400);
 }
 
 .card__great p:first-of-type {
@@ -139,12 +152,17 @@ body {
   font-weight: var(--fw-black);
 }
 
+.card__great p:last-of-type {
+  margin: 0.875rem auto 3.4rem;
+}
+
 .card__summary-results {
   display: grid;
   grid-template-rows: auto;
-  row-gap: 0.57rem;
+  row-gap: 1.5rem;
   justify-content: center;
   padding: 0 2.5rem;
+  color: var(--clr-neutral-dark-gray-blue);
 }
 
 .card__result-categories {
@@ -169,13 +187,14 @@ body {
   gap: 0 1rem;
 }
 
-.card__result-score {
-  color: hsl(224, 30%, 27%, 0.5)
+/* .card__results-score {
+  color: hsl(224, 30%, 27%, 0.5);
+  font-size: var(--fs-400);
 }
+*/
 
 .card__result-score span {
   font-weight: var(--fw-black);
-  color: var(--clr-neutral-dark-gray-blue);
 }
 
 .card__result-item svg {
@@ -216,6 +235,7 @@ button {
   padding: 1rem 6.6rem;
   font-weight: var(--fw-bold);
   cursor: pointer;
+  margin-bottom: 2.875rem;
 }
 
 button:hover,
