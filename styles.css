@@ -148,7 +148,7 @@ body {
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 1rem;
   font-size: var(--fs-400);
   background-color: hsl(var(--item-color), .1);
