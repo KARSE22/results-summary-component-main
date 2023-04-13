@@ -52,7 +52,6 @@ svg {
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: var(--fs-400);
-  /* background-color: var(--clr-neutral-pale-blue); */
 }
 
 .card__section-title {
@@ -219,7 +218,7 @@ button:focus-visible {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 
   .card__container {
     border-radius: 0;
