@@ -1,4 +1,4 @@
-# Results summary component Challenege
+# Results Summary Component Challenege
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
