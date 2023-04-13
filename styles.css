@@ -55,14 +55,6 @@ body {
   /* background-color: var(--clr-neutral-pale-blue); */
 }
 
-@media (min-width: 500px) {
-  body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-  }
-}
-
 .card__section-title {
   font-weight: var(--fw-bold);
   font-size: 1.3rem;
@@ -223,6 +215,14 @@ button {
 button:hover,
 button:focus-visible {
   background: var(--gradient-bg);
+}
+
+@media (min-width: 500px) {
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 400px) {
