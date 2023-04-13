@@ -52,7 +52,7 @@ svg {
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: var(--fs-400);
-  background-color: var(--clr-neutral-pale-blue);
+  /* background-color: var(--clr-neutral-pale-blue); */
 }
 
 @media (min-width: 500px) {
