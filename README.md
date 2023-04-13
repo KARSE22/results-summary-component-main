@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component
+# Results summary component Challenege
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
@@ -10,7 +10,7 @@ Thanks for visiting my Github!
 
 To build out this results summary component and get it looking as close to the design as possible.
 
-This solution was build with plain HTML and CSS, leveraging CSS variables and custom properties.
+This solution was build with plain HTML and CSS, leveraging CSS variables, custom properties CSS Grid and Flexbox.
 
 Please checkout my solution [here](https://karse22.github.io/results-summary-component-main/)!
 
