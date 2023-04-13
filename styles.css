@@ -71,7 +71,6 @@ body {
 .card__content {
   display: flex;
   justify-content: space-between;
-
 }
 
 .card__results {
@@ -82,6 +81,7 @@ body {
   align-items: center;
   gap: 2.18rem 0;
   padding: 0 3rem;
+  flex: 1;
 }
 
 .card__results h1 {
@@ -130,6 +130,7 @@ body {
 }
 
 .card__summary-results {
+  flex: 1;
   display: grid;
   grid-template-rows: auto;
   row-gap: 1.5rem;
@@ -148,7 +149,7 @@ body {
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 1rem;
   font-size: var(--fs-400);
   background-color: hsl(var(--item-color), .1);
