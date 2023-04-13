@@ -10,5 +10,7 @@ Thanks for visiting my Github!
 
 To build out this results summary component and get it looking as close to the design as possible.
 
-Please checkout my solution [here]()!
+This solution was build with plain HTML and CSS, leveraging CSS variables and custom properties.
+
+Please checkout my solution [here](https://karse22.github.io/results-summary-component-main/)!
 
